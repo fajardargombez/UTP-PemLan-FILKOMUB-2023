@@ -28,6 +28,13 @@ public class Meja {
         return menu;
     }
 
+    // Bagian dari Method 
+    public void setMenu(){
+        for (int i = 0; i < this.menu.length; i++) {
+            this.menu[i] = null;
+        }
+    }
+
     public void setMenu(Menu menu) {
         boolean pesananDitambahkan = false;
         for (int i = 0; i < this.menu.length; i++) {
@@ -44,6 +51,6 @@ public class Meja {
 
     // untuk mengecek apakah meja kosong
     public boolean isKosong() {
-        // EDIT DISINI
+        return (this.pelanggan == null);
     }
 }
